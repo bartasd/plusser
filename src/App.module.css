@@ -1,0 +1,73 @@
+.container {
+  margin-top: 10vh;
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers,
+.log {
+  width: 100%;
+  height: 40%;
+  background-color: #555;
+}
+
+.numbers {
+  display: flex;
+}
+
+.numbers > div {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.numbers > div > p {
+  margin-left: calc(50% - 125px);
+  margin-top: 40px;
+  width: 250px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.numbers > div > div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 160px;
+  left: calc(25% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.numbers > div > div:hover {
+  box-shadow: 0 0 5px 5px white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.numbers > div > div:nth-of-type(2) {
+  left: calc(50% - 60px + 40px);
+}
+.numbers > div > div:nth-of-type(3) {
+  left: calc(75% - 90px + 80px);
+}
+
+.log {
+  height: 60%;
+  background-color: #777;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
